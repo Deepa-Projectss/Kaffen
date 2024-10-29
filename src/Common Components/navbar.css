@@ -1,0 +1,88 @@
+
+.cafe-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0e1317;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.kaffen-img {
+    height: 40px;
+    width: auto;
+    padding-left: 5px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #333;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px;
+    display: block;
+}
+
+.downwards {
+    color: #fff;
+}
+
+.booking-btn {
+    height: 50px;
+    width: 110%;
+    float: right;
+    margin-right: 30px;
+    background: #b99272;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.booking-btn:hover{
+    background-color: #fff;
+    color: #b99272;
+    border: none;
+}

@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.carousel-inner img {
+    height: 470px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.caption {
+    position: absolute;
+    top: 27%;
+    left: 41%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.sub-head {
+    font-size: 90px;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: bold;
+}
+
+.heads {
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+}
+
+.custom-control-prev,
+.custom-control-next {
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+    /* z-index: 5; */
+    position: absolute;
+    top: 30%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* transform: translateY(-50%); */
+}
+
+.custom-control-prev:hover img,
+.custom-control-next:hover img {
+    background-color: #b99272;
+}
+
+.carousel-control-prev {
+    left: 0px;
+}
+
+.carousel-control-next {
+    right: 0px;
+}
+
+/* Flip the next button */
+.flipped {
+    transform: scaleX(-1);
+}
+
+.btns {
+    position: absolute;
+    top: 85%;
+    left: 27%;
+    transform: translateX(-50%);
+    color: white;
+    display: flex;
+    gap: 20px;
+    /* height: 50px; */
+}
+
+.explore-btn {
+    border: none;
+    background-color: #b99272;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-family: serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background-color: #fff;
+    color: #b99272;
+}
+
+.getdelivery-btn {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.getdelivery-btn:hover {
+    background-color: #fff;
+    color: #b99272;
+}
+
+.about-cafe {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.aboutuss {
+    color: #b99272;
+    margin: 10%;
+}
+
+.cafe-para {
+    width: 75%;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.person-quotes {
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 25%;
+    width: 70%;
+    background-color: #b99272;
+    border-radius: 10px;
+}
+
+.person-cir-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.quotes {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.coffee-pic {
+    height: 85%;
+}
+
+.menus-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+
+.Menus {
+    flex: 0 1 340px;
+    /* Allow flexibility and width control */
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.images {
+    height: 250px;
+    width: 100%;
+    opacity: 0.2;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.restaurant-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.restaurant-icons {
+    height: 60px;
+    width: 50px;
+    filter: invert(100%);
+    margin-bottom: 10px;
+}
+
+.texts {
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-top: 5px;
+}
+
+.img-border {
+    box-sizing: border-box;
+    border: 1px solid #b99272;
+    height: 190px;
+    width: 78%;
+    position: relative;
+    top: -220px;
+    margin-left: 11%;
+    opacity: 0.5;
+    transition: transform 0.1s ease;
+}
+
+.images:hover {
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.coffee-icons {
+    height: 80px;
+    width: 70px;
+    filter: invert(100%);
+}
+
+.foodservice-icons {
+    height: 50px;
+    width: 50px;
+    filter: invert(100%);
+    padding-top: 10px;
+}
+
+.food-texts {
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: -10px;
+    padding-top: 15px;
+}
+
+.popular-coffee {
+    background-attachment: fixed;
+    flex: 1;
+}
+
+.choose-coffee-text {
+    color: #b99272;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 43%;
+    padding-top: 10%;
+}
+
+.kaffen-coffee-menu {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 30%;
+}
+
+.coffee-menus-container {
+    background: #000;
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 85%;
+}
+
+.coffee-card {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 25px;
+}
+
+.coffee-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.coffee-menu-text {
+    flex: 1;
+    padding-left: 20px;
+    color: white;
+
+}
+
+.coffee-images {
+    width: 200px;
+    height: 200px;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure the image fits within the dimensions */
+    border-radius: 10px;
+}
+
+.girl-coffee-img {
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.explore-more-btn {
+    border: none;
+    background-color: #b99272;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    font-family: serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 20%;
+}
+
+.explore-more-btn:hover {
+    background-color: #fff;
+    color: #b99272;
+}
+
+.image-containers {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+
+.image-containers img {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-containers .hover-text {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 28px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-containers .img-border1 {
+    box-sizing: border-box;
+    border: 1px solid #b99272;
+    height: 65%;
+    width: 90%;
+    position: relative;
+    top: -476px;
+    margin-left: 4%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.image-containers:hover img {
+    transform: scale(1.05);
+    opacity: 0.2;
+}
+
+.image-containers:hover .hover-text {
+    opacity: 1;
+}
+
+.image-containers:hover .img-border1 {
+    opacity: 1;
+}
+
+.image-containers .img-border2 {
+    box-sizing: border-box;
+    border: 1px solid #b99272;
+    height: 93%;
+    width: 93%;
+    position: relative;
+    top: -490px;
+    margin-left: 4%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-containers:hover .img-border2 {
+    opacity: 1;
+}
+
+.image-containers .hover-text1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 28px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-containers:hover .hover-text1 {
+    opacity: 1;
+}
+
+.feedback-container .slick-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.feedback-container .slick-slide {
+    overflow: hidden;
+}
+.feedback-container .slick-dots {
+    position: absolute;
+    bottom: 10px; 
+    width: 100%;
+    text-align: center;
+    z-index: 10; 
+}
+.slick-dots button {
+    display: block !important;
+    border-radius: 10px !important;
+    border-color: #fff;
+   
+}
+.slick-arrow {
+    display: none !important;
+}
+
